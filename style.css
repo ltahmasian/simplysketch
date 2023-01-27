@@ -1,0 +1,115 @@
+@font-face{
+    src: url(fonts/DMSans-Regular.ttf);
+    font-family: DM_SANS;
+}
+
+body{
+    background-color: rgb(235, 235, 235);
+    letter-spacing: 4px;
+    font-family: DM_SANS;
+    color: #7B7575;
+    font-size: 20px;
+    text-shadow: 2px 2px 24px #7B7575;
+}
+
+.headerLogo{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containers{
+    display: flex;
+    gap: 56px;
+    justify-content: space-between
+}
+
+.left-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    height: 676px;
+    width: 50px;
+    margin-left: 150px;
+}
+
+.canvas{
+    flex: 2;
+    display: grid;
+    background-color: white;
+    height: 676px;
+    box-shadow: 2px 2px 12px #7B7575;
+    display: grid;
+}
+
+.right-container{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 676px;
+    margin-right: 150px;
+    text-align: center;
+}
+
+button{
+    width: 200px;
+    font-size: large;
+    border-radius: 100px;
+    border-color: #7B7575;
+    height: 40px;
+    font-family: DM_SANS;
+    color: #7B7575;
+    letter-spacing: 4;
+    box-shadow: 2px 2px 12px #7B7575;
+    transition: 0.25s;
+}
+
+button:hover{
+    background-color: #7B7575;
+    opacity: 50%;
+    color: white;
+    transition: 0.5s;
+    border-color: black;
+    font-size: 20px;
+    height: 80px;
+    cursor: pointer;
+}
+
+.rightMenu:focus{
+    background-color: #7B7575;
+    opacity: 50%;
+    color: white;
+    border-color: black;
+    font-size: 20px;
+    height: 80px;
+}
+
+.leftMenu:focus{
+    background-color: #7B7575;
+    opacity: 50%;
+    color: white;
+    border-color: black;
+    font-size: 20px;
+    height: 80px;
+    
+}
+
+#color-input{
+    height: 150px;
+    width: 150px;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 12px #7B7575;
+}
+
+#color-picker{
+    border-radius: 50%;
+}
+
+.caption-text{
+    font-size: 24px;
+}

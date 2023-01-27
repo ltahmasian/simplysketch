@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simplysketch.io</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="headerLogo">
+        <img src="imgs/Logo (SS).png" alt="SIMPLYSKETCH." class="hLogo">
+    </div>
+    <div class="containers">
+        <div class="left-container">
+            <div class="choose-color">
+                <p id="colorText">CHOOSE YOUR <strong>COLOR.</strong></p>
+            </div>
+            <div id="color-picker">
+                <input type="color" id="color-input">
+            </div>
+            <div class="choose-style">
+                <p id="styleText">CHOOSE YOUR <strong>STYLE.</strong></p>
+            </div>
+            <div class="color-btn">
+                <button class = "leftMenu" id="color-button" onclick="changeSize(52)">COLOR</button>
+            </div>
+            <div class="eraser-btn">
+                <button class = "leftMenu" id = "eraser-button" onclick ="changeColor('white')">ERASER</button>
+            </div>
+            <div class="rainbow-btn">
+                <button class = "leftMenu" id="rainbow-button" onclick = "resetBoard()">RESET</button>
+            </div>
+        </div>
+        <div class="canvas"></div>
+        <div class="right-container">
+            <div class="choose-size">
+                <p id="sizeText">CHOOSE YOUR <strong>SIZE.</strong></p>
+            </div>
+            <div class="small-btn">
+                <button onclick="changeSize(52)" class="rightMenu">SMALL</button>
+            </div>
+            <div class="medium-btn">
+                <button onclick="changeSize(26)" class="rightMenu">MEDIUM</button>
+            </div>
+            <div class="large-btn">
+                <button onclick="changeSize(13)" class="rightMenu">LARGE</button>
+            </div>
+            <div class="caption">
+                <p class="caption-text">BEGIN</p>
+                <p class="caption-text"><strong>SIMPLY</strong></p>
+                <p class="caption-text">SKETCHING</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
